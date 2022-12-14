@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+   
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="container">
+        <div class="bg-color">
+      <div class="details-section">
+        <img src="./images/Register-image.png" />
+        <div>
+          <h2 class="item-details">Create Account</h2>
+          <p class="item-details">
+            Go ahead and sign up, let everyone know how awesome you are!
+          </p>
+          <form id="register-form" action="./js/Register.js">
+       
+          <div class="register-input">       
+             <span id="username-span" class="invalid"></span>  
+            <div class="register-input-details">
+              <iconify-icon
+                icon="ph:user-light"
+                style="color: #9cadf2"
+              ></iconify-icon>
+              <span>&#124; </span>
+              <input type="text" name="username"  minlength="5" maxlength="15" pattern="^[A-Za-z](\/?[0-9A-Za-z])*\/?$" title='username must be contains only number and letters and the first one and last should be letters'id="username" />
+        
+            </div> <span id="email" class="invalid"></span>
+            <div class="register-input-details">
+                <iconify-icon icon="ic:outline-email" style="color: #9cadf2;"></iconify-icon>
+                <span>&#124; </span>
+                <input type="email" name="email"/>
+              </div>
+              <span id="password" class="invalid"></span>
+              <div class="register-input-details">
+                <iconify-icon icon="material-symbols:lock-outline" style="color: #9cadf2;"></iconify-icon>
+                <span>&#124; </span>
+                <input type="password"  name="password" />
+              </div>
+              <span id="confirm-password-span" class="invalid"></span>
+              <div class="register-input-details">
+                <iconify-icon icon="material-symbols:lock-outline" style="color: #9cadf2;"></iconify-icon>
+                <span>&#124; </span>
+                <input type="password" name="password_confirmation"id="confirm-password" />
+              </div>
+          </div>
+           <button class="item-details">Get Started</button>
+        </form>
+         
+        </div>
+      </div>
+      </div> 
+    </div>
+    </section> <script src="./js/register.js"></script>
+  </body>
+</html>
